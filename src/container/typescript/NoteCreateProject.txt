@@ -1,0 +1,3 @@
+tạo project mới với typescript: npx create-react-app tên dự án --template typescript
+tạo một response trên git rồi clone về sau đó mở folder lên và tạo project 
+tạo xong project thì add, commit, push lên nhánh main
