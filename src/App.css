@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+input:in-range{
+  border: 1px solid #0CE279;
+  box-shadow: 0 0 20px #0CE279;
+}
+input:out-of-range{
+  border: 1px solid #D238c5;
+  box-shadow: 0 0 20px #D238c5;
+}
