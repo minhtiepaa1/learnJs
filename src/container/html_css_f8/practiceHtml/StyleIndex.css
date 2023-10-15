@@ -1,0 +1,38 @@
+h2{
+    color: blueviolet;
+}
+
+#cssID{
+    color: blue;
+}
+
+.cssClass{
+    color: rgb(78, 151, 127);
+}
+
+/* css selectors */
+/* one element have many class */
+.class1.class2{
+    color: brown;
+}
+
+/* class41 is must child of class4 */
+.class4 .class41{
+    color: blueviolet;
+}
+
+/* css con trực tiếp */
+.directClild > .directClild1{
+ background-color: aqua;
+}
+
+/* css chọn class đằng sau liền kề class đầu*/
+/* có trường hợp chung class */
+.class5 + .class6{
+    background-color: brown;
+}
+
+/* tương tự + nhưng sẽ khác khi có một thẻ, class khác đứng trước */
+.class7 ~ .class7{
+    color: blue;
+}

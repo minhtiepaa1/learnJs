@@ -9,16 +9,18 @@ const orders = [100, 200, 300];
 
 const State = () => {
   const [state, setSate] = useState<String>("initState");
-  // nhận vào innitState giá trị đầu chỉ dùng một lần
+  // nhận vào innitState giá trị đầu chỉ dùng lần đầu
   // return ra một mảng 2 phần tử state và setState để cập nhật giá trị
   // ví dụ click tăng số tăng click giảm số giảm
   const [counter, setCouter] = useState<number>(0);
   // kiểu dữ liệu Number truyền vào giá trị đầu tiên 0
-  // lần đầu tiên render sẽ chạy trong hàm return đầu tiên sau đó mới chạy
-  // các properties phía trên return
+  // lần đầu tiên render sẽ chạy từ trên component xuống chạy các dòng code đồng bộ state chỉ được chạy một lần
+  // khi component được mounted sau đó khi set state state render lại component sẽ không chạy lại state nữa mà chỉ cập nhật giá trị
   console.log("re-render");
   const upCounter = () => {
     // giá trị vẫn chỉ tăng lên một
+    // cơ chế quản lý nó sẽ chạy xong 3 hàm set mới render lại component
+    // vì counter lúc tham chiếu vẫn đang là 0 chưa render lại chưa dk cập nhật
     setCouter(counter + 1);
     setCouter(counter + 1);
     setCouter(counter + 1);
@@ -30,6 +32,9 @@ const State = () => {
   const callBackState = () => {
     // call back lấy giá trị trước đó
     // giá trị sẽ lấy giá trị trước cộng với + 1
+    // call back có thể giúp ta lấy dk giá trị trước đó
+    // mặc dù counter lúc này chưa dk cập nhật giá trị nhưng trong call back đã được
+    // cập nhật và tham chiếu đến
     setCouter((prev) => prev + 1);
     setCouter((prev) => prev + 1);
     setCouter((prev) => prev + 1);
@@ -50,7 +55,7 @@ const State = () => {
 
   const handleObjState = () => {
     setObjState((prev: any) => {
-      // cần xử lý login thì sử dụng như này
+      // cần xử lý logic thì sử dụng như này
       return { ...prev, name: "name1" };
     });
     // thường sẽ sử dụng như này

@@ -1,0 +1,32 @@
+1. Cú pháp JavaScript: Học cách viết cú pháp cơ bản của JavaScript, bao gồm khai báo biến, kiểu dữ liệu, câu lệnh điều kiện (if/else),
+vòng lặp (for/while), hàm, và nhiều thứ khác.
+
+2. Biến và Kiểu dữ liệu: Hiểu về các kiểu dữ liệu cơ bản trong JavaScript như số, chuỗi, mảng, đối tượng. Tìm hiểu cách khai báo và sử dụng biến.
+
+3. Hàm (Function): Học cách định nghĩa và gọi hàm. Biết cách truyền tham số và sử dụng giá trị trả về.
+
+4. Sự kiện (Events): Làm quen với xử lý sự kiện trong JavaScript, ví dụ như click chuột, gửi biểu mẫu (form submissions), và nhiều sự kiện khác.
+
+5. DOM (Document Object Model): JavaScript được sử dụng để tương tác với DOM, tức là cách trang web được biểu diễn và tạo ra bằng mã HTML. Học cách truy cập và điều chỉnh 
+các phần tử HTML sử dụng JavaScript.
+
+6. Ajax và Fetch: Tìm hiểu cách làm việc với XMLHttpRequest và Fetch API để tải dữ liệu từ máy chủ mà không cần làm tải lại trang.
+
+7. ES6 và Các Cải Tiến Mới: ES6 (ECMAScript 2015) đã mang lại nhiều cải tiến cho JavaScript. Học về cú pháp mới như let, const, arrow functions, và template literals.
+
+8. Closures và Callbacks: Hiểu về closures và callbacks, các khái niệm quan trọng trong JavaScript.
+
+9. Promise và Async/Await: Học cách sử dụng Promise để xử lý các tác vụ bất đồng bộ và cách sử dụng async/await để viết mã dễ đọc hơn.
+
+10. Thư viện và Frameworks: Học cách sử dụng các thư viện và frameworks phổ biến như jQuery, React, Angular, hoặc Vue.js để phát triển ứng dụng web mạnh mẽ.
+
+11. Bộ công cụ phát triển (Developer Tools): Làm quen với các công cụ phát triển trong trình duyệt web như Chrome DevTools để gỡ lỗi và kiểm tra hiệu suất ứng dụng.
+
+12. Bảo mật: Tìm hiểu về các vấn đề bảo mật phổ biến trong ứng dụng JavaScript và cách tránh chúng.
+
+13. Xây dựng ứng dụng thực tế: Thực hành bằng cách xây dựng các dự án thực tế như trình quản lý công việc, trò chơi, trang web cá nhân, và nhiều ứng dụng khác.
+
+14. Tài liệu và cộng đồng: Sử dụng tài liệu trực tuyến và tham gia cộng đồng lập trình để tìm hiểu và giải quyết vấn đề.
+
+Học JavaScript là một quá trình liên tục và bạn sẽ tiếp tục học thêm khi tiếp xúc với dự án và vấn đề cụ thể.
+Đừng ngần ngại thử nghiệm và xây dựng ứng dụng để thực hành những kiến thức này.

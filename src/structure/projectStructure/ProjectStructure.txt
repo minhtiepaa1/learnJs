@@ -1,0 +1,84 @@
+project/
+  ├── src/                # Mã nguồn chính của ứng dụng
+  │   ├── assets/         # Tài liệu tĩnh như hình ảnh, fonts
+  │   ├── components/     # Các thành phần giao diện (React components, Vue components, etc.)
+  │   ├── containers/     # Các thành phần giao diện mẹ (kết hợp nhiều components lại)
+  │   ├── styles/         # CSS hoặc SCSS
+  │   ├── js/             # JavaScript
+  │   ├── views/          # Các trang giao diện
+  │   ├── utils/          # Các hàm tiện ích
+  ├── public/             # Tài liệu tĩnh public như favicon.ico
+  ├── config/             # Cấu hình ứng dụng (config files)
+  ├── tests/              # Test files
+  ├── node_modules/        # Dependencies (tự động tạo bởi npm hoặc yarn)
+  ├── package.json         # File quản lý dependencies và scripts
+  ├── package-lock.json    # Phiên bản cụ thể của dependencies (nếu dùng npm)
+  ├── yarn.lock            # Phiên bản cụ thể của dependencies (nếu dùng yarn)
+  ├── README.md            # Tài liệu hướng dẫn sử dụng ứng dụng
+///// example
+
+1. assets/
+
+images/: Chứa hình ảnh, ví dụ: logo.png, background.jpg.
+fonts/: Chứa các tệp font chữ, ví dụ: roboto.ttf, awesome.woff.
+
+2. components/
+
+Button.js: Một thành phần React hoặc Vue.js đơn giản cho nút.
+FormInput.js: Một thành phần đầu vào cho biểu mẫu.
+Navbar.js: Thành phần thanh điều hướng chung của trang web.
+Modal.js: Thành phần hiển thị hộp thoại modal.
+
+3. containers/
+
+HomePage.js: Thành phần giao diện mẹ cho trang chính của ứng dụng, có thể kết hợp nhiều thành phần như Button, FormInput, và Navbar.
+UserDashboard.js: Trang dashboard của người dùng, chứa các thành phần giao diện cụ thể.
+
+4. styles/
+
+main.css: Tệp CSS chung cho toàn bộ ứng dụng.
+components/: Thư mục này chứa các tệp CSS hoặc SCSS riêng cho từng thành phần, ví dụ: Button.scss, Modal.css.
+
+5. js/
+
+main.js: Tệp JavaScript chính cho ứng dụng, nơi bạn có thể nhập và sử dụng các thành phần giao diện.
+helpers/: Thư mục này chứa các tệp JavaScript đáng chú ý, ví dụ: api.js cho các yêu cầu API, util.js cho các hàm tiện ích.
+
+6. views/
+
+HomeView.js: Một tệp JavaScript chứa thành phần giao diện cho trang chủ.
+UserDashboardView.js: Thành phần giao diện cho trang dashboard của người dùng.
+
+7. utils/
+
+dateUtils.js: Hàm tiện ích liên quan đến xử lý ngày tháng.
+stringUtils.js: Hàm tiện ích cho xử lý chuỗi.
+
+
+//// đặt tên filesSử dụng Tên Rõ Ràng và Mô tả: Đảm bảo rằng tên file thể hiện rõ mục đích và chức năng của file.
+ Hãy tránh sử dụng các tên file không rõ ràng như "file1.js" hoặc "temp.css". Thay vào đó, hãy sử dụng tên như "userProfileComponent.js" hoặc "mainStyles.css".
+
+Sử dụng Ký tự viết thường và gạch dưới: Theo quy ước phổ biến,
+ sử dụng ký tự viết thường và gạch dưới để đặt tên file thay vì sử dụng khoảng trắng hoặc ký tự đặc biệt. Ví dụ: "my_component.js" thay vì "My Component.js".
+
+Sử dụng Quy tắc Camel Case hoặc Kebab Case: Trong JavaScript, thường sử dụng "camelCase" cho tên biến và tên hàm, ví dụ: myFunctionName.
+ Trong tên file, bạn có thể sử dụng "camelCase" hoặc "kebab-case". Ví dụ: myComponent.js hoặc my-component.js.
+
+Phân chia Thư mục rõ ràng: Đặt tên file cùng với cấu trúc thư mục phải tạo ra một cấu trúc rõ ràng. Ví dụ, nếu bạn có một thư mục components,
+ bạn có thể có buttonComponent.js, headerComponent.js, và như vậy.
+
+Sử dụng Hậu tố phù hợp: Sử dụng hậu tố đúng cho loại file. Ví dụ, sử dụng .js cho các tệp JavaScript, .css cho các tệp CSS, .html cho các tệp HTML, và .png cho hình ảnh PNG.
+
+Không sử dụng Tên Quá Ngắn hoặc Quá Dài: Tránh sử dụng các tên file quá ngắn hoặc quá dài. Tên file nên đủ ngắn để mô tả mục đích của nó,
+ nhưng không quá ngắn để làm mất đi tính rõ ràng.
+
+Sắp xếp file theo Mục đích hoặc Loại: Một cách thường thấy là sắp xếp các file theo mục đích hoặc loại.
+ Ví dụ, bạn có thể có thư mục components cho các thành phần giao diện, styles cho tệp CSS, và utils cho các hàm tiện ích.
+
+Khi có nhiều phiên bản của một tệp, sử dụng hậu tố hoặc tiền tố để phân biệt:
+ Nếu bạn có nhiều phiên bản của một tệp (ví dụ: main_v1.js, main_v2.js), sử dụng hậu tố hoặc tiền tố để phân biệt chúng (ví dụ: main_v1.js, main_v2.js).
+
+Tuân theo Quy ước của Dự án hoặc Nhóm: Nếu bạn đang làm việc trong một dự án hoặc nhóm cụ thể,
+ hãy tuân theo quy ước đặt tên mà dự án hoặc nhóm đề xuất để duy trì tính thống nhất.
+
+Quy tắc đặt tên file giúp dự án của bạn trở nên dễ quản lý, dễ bảo trì và dễ làm việc cộng tác với đồng đội.

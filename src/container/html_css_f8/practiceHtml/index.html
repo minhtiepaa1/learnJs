@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <!-- comment here -->
+    <head>
+        <title> tiep html </title>
+        <meta charset="utf-8">
+        <!-- css style external -->
+        <link rel="stylesheet" href="StyleIndex.css">
+        <!-- css internal -->
+        <style>
+            h1{
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> hello world</h1>
+        <p> text content here</p>
+        <img src="link_here" alt="anh content" >
+        <a href="link_here"> click here</a>
+        <ul>
+            <li> html</li>
+            <li> css  </li>
+            <li> js</li>
+        </ul>
+        <table>
+          <thead>
+            <th>
+                html
+            </th>
+            <th> css</th>
+            <th>
+                js
+            </th>
+          </thead> 
+          <tbody>
+            <tr>
+                <td> html</td>
+                <td>css</td>
+                <td>js</td>
+            </tr>
+          </tbody>
+        </table>
+        <input type="checkbox">
+        <input type="password" >
+        <input type="color">
+        <button onclick="onClick()"> login</button>
+
+        <!-- div tạo thành một khối -->
+        <div>
+            box div here
+        </div>
+        <h2 title="Đây là Attibute, thuộc tính trong thẻ"> Attribute</h2>
+        <!-- style inline  -->
+        <h3 style="color: burlywood;"> css in html</h3>
+        <ol>
+            <li>Internal</li>
+            <li>External</li>
+            <li>Inline</li>
+        </ol>
+       <ul>
+        <li id="cssID">css ID</li>
+        <!-- cùng kiểu css thì nên dùng class -->
+        <li class="cssClass"> css class</li>
+        <li class="cssClass"> css class two</li>
+       </ul>
+       <!-- css selectors -->
+       <h4> css selectors </h4>
+       <div>
+        <ul>
+            <li class="class1 class2 class3"> css selectors many class </li>
+            <li class="class4"> css
+                <div class="class41">
+                    child class 4
+                </div>
+                <div>
+                    <div class="class41">
+                    child class 41
+                    </div>
+                </div>
+                
+            </li>
+            <!-- css con trực tiếp -->
+            <li class="directClild"> 
+               <div class="directClild1">
+                    directClild
+               </div> 
+               <div>
+                    <p class="directClild1"> not direct clild</p>
+               </div>
+             </li>
+            <li class="class5"> css  class5 (class5 + class6) </li>
+            <li class="class6"> css class6 </li>
+            <li class="class6"> css class62 </li>
+            <li class="class6"> css class622 </li>
+            
+            <li class="class7"> css class63 </li>
+            <div></div>
+            <li class="class7"> css class64 </li>
+            <li class="class7"> css class65 </li>
+            <!-- mức độ ưu tiên trong css -->
+        </ul>
+       </div>
+       <!-- đang học đến bài 28 -->
+       <!-- https://fullstack.edu.vn/learning/html-css?id=91a2e1c4-cf73-43bf-bd43-6d56f0066784 -->
+       <script>
+        function onClick (){
+            console.log("hello")
+        }
+       </script>
+    </body>
+</html>
