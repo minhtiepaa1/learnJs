@@ -12,7 +12,7 @@ function App() {
         <MyTable />
 
         <input type="number" min={0} max={9999999} />
-        <State />
+        {/* <State /> */}
       </div>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
