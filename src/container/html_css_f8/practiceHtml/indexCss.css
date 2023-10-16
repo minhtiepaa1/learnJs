@@ -1,0 +1,17 @@
+/* variable */
+ /* biến lớp giả root biến 
+ toàn cục mọi nơi bên dưới
+ trong file
+ */
+:root{
+    --green-color:green;
+}
+
+h1{
+    color: var(--green-color);
+}
+h3{
+    /* biến cục bộ */
+    --mau-violet:violet;
+    color: var(--mau-violet);
+}
