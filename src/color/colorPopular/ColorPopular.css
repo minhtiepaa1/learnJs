@@ -1,0 +1,12 @@
+.mauXanh{
+  color:  var(--xanh);
+  background-color: var(--xanh-ssi);
+}
+:root{
+    --xanh:rgba(16, 124, 16, 1.0);
+    --xanh-ssi:#0bdf39;
+    --tim:#f23aff;
+    --xanh-sky:#00c9ff;
+    --vang:#fdff12;
+    --xanh-button:#00a980;
+}
