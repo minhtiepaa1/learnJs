@@ -5,6 +5,62 @@
 </head>
 <body>
 <h3> enter conten here</h3>
+<p>
+    <h4> học các đơn vị trong css</h4>
+    <ul>
+        <p> đơn vị tuyệt đối (absolute units)</p>
+        <li>px(picxel)</li>
+           
+            <p>
+                tương ứng với một điểm ảnh
+                và sẽ không bị thay đổi kích thước
+                khi thu phóng nhỏ màn
+            </p>
+        <p> đơn vị tương đối ()relative units</p>
+        <li>%</li>
+        <p> sẽ lấy phần trăm theo kích thước
+            của thẻ chứa nó
+            <br>
+            lưu ý % phụ truộc vào cha trực tiếp 
+            nên cha phải có width và height mới có tác dụng
+            <br>
+            mặc định thẻ body, div có with 100%
+            height auto;
+        </p>
+        <li>rem</li>
+            <p>nó sẽ phụ thuộc vào 
+                thuộc tính được định nghĩa ở thẻ html
+                <br>
+                (ví dụ:
+               html  font-size:20px; 
+               khi dùng: font-size: 1rem:
+               1rem tương ứng với 20px
+                )
+                <br>
+                mặc định thẻ html có font-size:16px
+                <br>
+                thường dùng rem cho set font-size. 
+                khi đó người dùng thay đổi font-size 
+                trên trính duyệt thì sẽ thay đổi được
+                so với khi xét px
+             </p>
+        <li>em</li>
+             <p> phụ thuộc vào thẻ gần nhất chứa nó 
+                có thuộc tính giống
+                nó sẽ tìm từ thằng gần nhất nếu ko có tìm tiếp 
+                để kế thừa lại
+             </p>
+        <li>vw (viewport-with)</li>
+             <p>ví dụ: 50vw tức là bằng 50%
+                kích thước của trình duyệt và kop bị thay 
+                đổi khi thu nhỏ trình duyệt
+             </p>
+        <li>vh </li>
+        <p> 100% chiều dọc của trình duyệt</p>
+        <li></li>
+        <!-- bài sau sẽ học về hàm trong css -->
+    </ul>
+</p>
 </body>
 <footer>
 footer page
