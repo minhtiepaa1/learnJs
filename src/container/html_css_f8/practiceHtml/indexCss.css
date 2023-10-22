@@ -1,17 +1,162 @@
 /* variable */
- /* biến lớp giả root biến 
+/* biến lớp giả root biến 
  toàn cục mọi nơi bên dưới
  trong file
  */
-:root{
-    --green-color:green;
+:root {
+    --green-color: green;
 }
 
-h1{
+h1 {
     color: var(--green-color);
 }
-h3{
+
+h3 {
     /* biến cục bộ */
-    --mau-violet:violet;
+    --mau-violet: violet;
     color: var(--mau-violet);
+}
+
+.picxel {
+    width: 500px;
+    height: 50px;
+    background-color: aqua;
+}
+
+.percent {
+    width: 50%;
+    background-color: aquamarine;
+}
+
+.remUnit {
+    /* nó sẽ lấy theo giá trị
+    mặc định font size là 16px
+    nếu không đặt gì trong thẻ html
+    */
+    font-size: 1rem;
+    background-color: brown;
+}
+
+.emDiv {
+    /* font-size: 30px; */
+}
+
+.emUnit {
+    /* cũng lấy theo thuộc tính
+    font size thẻ gần nhất với nó
+    nếu ko có lấy mặc định 16px
+    */
+    font-size: 1em;
+    background-color: blueviolet;
+}
+
+.vwUnit {
+    width: 50vw;
+    color: white;
+    background-color: blue;
+}
+
+.content {
+    width: 100vw;
+    height: auto;
+    border: 1px solid #ccc;
+
+}
+
+/* một số hàm trong css */
+.hover-class:hover {
+    color: blue;
+}
+
+.active-class:active {
+    color: blueviolet;
+}
+
+li.first:first-child {
+    color: aqua;
+}
+
+li.last:last-child {
+    color: blue;
+}
+
+/* lớp giả pseudo element trong css */
+/* css bình thường như thẻ div 
+before luôn đứng ở đầu 
+after luôn đứng ở cuối trong element css
+*/
+.before::before {
+    /* cần phải để content vì dể element giả có thể tồn tại*/
+    content: "first";
+    display: block;
+    /* thẻ div mặc định đã có tính chất khối
+    nhưng trong before không có sẵn nên phải
+    thêm thuộc tính display block vào để nó có tính chất khối */
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
+
+.before::after {
+    /* cần phải để content vì dể element giả có thể tồn tại*/
+    content: "last";
+    display: block;
+    /* thẻ div mặc định đã có tính chất khối
+    nhưng trong before không có sẵn nên phải
+    thêm thuộc tính display block vào để nó có tính chất khối */
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
+
+.first-letter::first-letter {
+    font-size: 30px;
+}
+
+.first-line::first-line {
+    color: aquamarine;
+}
+
+.selection::selection {
+    background-color: blueviolet;
+}
+
+/* đệm viền và khoản lề */
+.container3Box {
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.box1 {
+    background-color: aqua;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+
+.box2 {
+    background-color: rgb(131, 207, 207);
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border: 5px solid #ccc;
+}
+
+.box3 {
+    background-color: rgb(59, 114, 114);
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 5px solid #ccc;
+    margin: 5px;
+}
+
+.box-sizing {
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+    margin: 5px;
+    padding: 5px;
+    border: 5px solid #ccc;
+    box-sizing: border-box;
 }
