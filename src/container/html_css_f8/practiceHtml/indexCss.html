@@ -1,67 +1,146 @@
 <!DOCTYPE html>
+
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="indexCss.css">
-<h1> Learn variable css</h1>
+    <h1> Learn variable css</h1>
 </head>
+
 <body>
-<h3> enter conten here</h3>
-<p>
-    <h4> học các đơn vị trong css</h4>
-    <ul>
-        <p> đơn vị tuyệt đối (absolute units)</p>
-        <li>px(picxel)</li>
-           
-            <p>
+    <h3> enter conten here</h3>
+    <div class="content">
+        <h4> học các đơn vị trong css</h4>
+        <ul>
+            <p> đơn vị tuyệt đối (absolute units)</p>
+            <li>px(picxel)</li>
+
+            <p class="picxel">
                 tương ứng với một điểm ảnh
                 và sẽ không bị thay đổi kích thước
-                khi thu phóng nhỏ màn
+                khi thu phóng màn hình
             </p>
-        <p> đơn vị tương đối ()relative units</p>
-        <li>%</li>
-        <p> sẽ lấy phần trăm theo kích thước
-            của thẻ chứa nó
-            <br>
-            lưu ý % phụ truộc vào cha trực tiếp 
-            nên cha phải có width và height mới có tác dụng
-            <br>
-            mặc định thẻ body, div có with 100%
-            height auto;
-        </p>
-        <li>rem</li>
-            <p>nó sẽ phụ thuộc vào 
+            <p> đơn vị tương đối ()relative units</p>
+            <li>%</li>
+            <div class="percent"> sẽ lấy phần trăm theo kích thước
+                của thẻ chứa nó
+                <br>
+                lưu ý % phụ truộc vào cha trực tiếp
+                nên cha phải có width và height mới có tác dụng
+                <br>
+                mặc định thẻ body, div có with 100%
+                height auto;
+            </div>
+            <li>rem</li>
+            <p class="remUnit">nó sẽ phụ thuộc vào
                 thuộc tính được định nghĩa ở thẻ html
                 <br>
                 (ví dụ:
-               html  font-size:20px; 
-               khi dùng: font-size: 1rem:
-               1rem tương ứng với 20px
+                html font-size:20px;
+                khi dùng: font-size: 1rem:
+                1rem tương ứng với 20px
                 )
                 <br>
                 mặc định thẻ html có font-size:16px
                 <br>
-                thường dùng rem cho set font-size. 
-                khi đó người dùng thay đổi font-size 
+                thường dùng rem cho set font-size.
+                khi đó người dùng thay đổi font-size
                 trên trính duyệt thì sẽ thay đổi được
                 so với khi xét px
-             </p>
-        <li>em</li>
-             <p> phụ thuộc vào thẻ gần nhất chứa nó 
-                có thuộc tính giống
-                nó sẽ tìm từ thằng gần nhất nếu ko có tìm tiếp 
-                để kế thừa lại
-             </p>
-        <li>vw (viewport-with)</li>
-             <p>ví dụ: 50vw tức là bằng 50%
-                kích thước của trình duyệt và kop bị thay 
-                đổi khi thu nhỏ trình duyệt
-             </p>
-        <li>vh </li>
-        <p> 100% chiều dọc của trình duyệt</p>
-        <li></li>
-        <!-- bài sau sẽ học về hàm trong css -->
-    </ul>
-</p>
+            </p>
+            <li>em</li>
+            <div class="emDiv">
+                <p class="emUnit"> phụ thuộc vào thẻ gần nhất chứa nó
+                    có thuộc tính giống
+                    nó sẽ tìm từ thằng gần nhất nếu ko có tìm tiếp
+                    để kế thừa lại
+                </p>
+            </div>
+
+            <li>vw (viewport-with)</li>
+            <div class="vwUnit">ví dụ: 50vw tức là bằng 50%
+                kích thước của trình duyệt(hay khung nhìn thiết bị) (tức là luôn bằng 50%
+                của tab trình duyệt dù phóng to thu nhở như nào)
+            </div>
+            <li>vh </li>
+            <p> 100% chiều dọc của trình duyệt</p>
+            <!-- bài sau sẽ học về hàm trong css -->
+            <h3>các hàm trong css</h3>
+            <ol>
+                <li>rgba()</li>
+                <li>rgb(0,0,0) đến (255, 255, 255)
+                    không tạo màu xình xuyên được như rgba()
+                </li>
+                <li>calc(tính toán) calc(120px-50px)
+                    + - * / với các loại units được
+                </li>
+                <li>attr(kết hợp lớp giả)</li>
+            </ol>
+            <div>
+                <h3> lớp giả pseudo-classes</h3>
+                <ul class="pseudo">
+                    <li class="first">:first-child</li>
+                    <li>:root</li>
+                    <li class="hover-class">:hover(khi di chuột vào sẽ áp dụng)</li>
+                    <li class="active-class">:active(khi click vào sẽ áp dụng)</li>
+                    <li class="last">:last-child</li>
+                </ul>
+            </div>
+            <!-- day 5 21-10-2023 -->
+            <div>
+                <h4>lớp giả pseudo element trong css</h4>
+                <ul>
+                    <div class="before">::before
+                        <li class="after">::after</li>
+                    </div>
+
+                    <li class="first-letter">::first-letter</li>
+                    <div class="first-line">
+                        ::first-line
+                        chỉ ảnh hưởng dòng đầu tiên
+                        <div> line 2 first-line</div>
+                    </div>
+                    <li class="selection">::selection khi lựa chọn (dí chuột copy text)</li>
+                </ul>
+            </div>
+        </ul>
+        <br>
+        <div class="container3Box">
+            <h2> Đệm, viền và khoản lề</h2>
+            <div> padding: 10px 10px; là trên dưới, phải trái
+                <br>
+                padding: 10px 10px 10px trên, phải trái, dưới;
+                <br>
+                padding: 4 theo chiều kim đồng hồ, nếu có 1, tất cả 4 hướng
+            </div>
+            <div class="box1">padding
+                <P> border là lớp ngoài cùng bọc một element </P>
+            </div>
+            <br>
+            <div class="box2">pading, border</div>
+            <br>
+            <div class="box3">pading, border, margin
+            </div>
+            <p>
+                margin sẽ tạo khoảng cách so với thẻ cha đang bọc nó
+                <br>
+                cách dùng giống padding
+            </p>
+            <div class="box-sizing"> Box-sizing
+
+            </div>
+            <p>
+                nó sẽ hiểu là tổng kích thước
+                element sẽ là content + padding + border
+                <br>
+                nếu tăng 1 trong 3 giá trị này sẽ luôn bằng
+                giá trị đã đặt (width, height)
+                <br>
+                lưu ý padding và border phải trong ngưỡng cho phép
+            </p>
+
+        </div>
+    </div>
 </body>
 <footer>
-footer page
+    footer page
 </footer>
