@@ -6,10 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Background</title>
     <link rel="stylesheet" href="style/StyleIndexBackground..css">
+    <style>
+        .classImage {
+            width: 50%;
+            height: 80vh;
+            background-image:
+                /* url(https://images.pexels.com/photos/17362908/pexels-photo-17362908/free-photo-of-young-woman-in-a-floral-dress-standing-in-a-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1), */
+                linear-gradient(0, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+                url(https://images.pexels.com/photos/17362907/pexels-photo-17362907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* contain lấy theo chiều dài nhất ko bị che khuất cắt xén */
+            /* cover chọn cạnh dài của bức ảnh lấy chấp nhận che mất ảnh */
+            border: 10px solid #ccc;
+            box-sizing: border-box;
+            padding: 5px;
+            /* mặc định padding box sẽ đổ ảnh từ padding vào */
+            /* border box sẽ đổ từ boder vào (chiếm từ border vào) */
+            /* conten-bõ tương tự như vậy */
+            background-origin: content-box;
+            /* background-position: top 20% left 20%; */
+            background-position: 10px 10px;
+        }
+    </style>
 </head>
 
 <body class="body">
-    <div> Background-image </div>
+    <div class="classImage"> Background-image </div>
+    <div> rgba(255, 255, 0, 0.5) 0.5 để nhìn xuyên qua (2 số còn lại 3 mã màu)</div>
+    <div>tìm hiểu về các giá tị màu sắc</div>
+    <ul>
+        <p>nhị phân(0, 1) (thập lục phân 16 số) </p>
+        <li>rgb(red, green, blue)( 0-255, 0-255, 0-255 )</li>
+        <li>#ff0000: thập lục phân 16 số (0123456789abcdef)
+            <br> ff tương ứng với 255
+            <br>
+            màu đỏ #ff0000 or #f00,blue #0000ff or #00f,
+            <br>
+            nếu (anpla = 1: hiện rõ thì #ff0000ff, nếu là 0: #ff000000)
+            <br>
+            thể hiện anpla dùng thập lục phân: (0.5 trong suốt)
+            <br>
+            thể hiện phải quy đổi: #ff000080, 80 quy đổi từ 0.5
+            (255 * 0.5) ~= 128 , quy đổi sang hex => 80
+            <br>
+            255 (lưu 8 bit)
+        </li>
+    </ul>
 
 </body>
 
