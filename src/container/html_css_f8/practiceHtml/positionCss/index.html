@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/positionCss/styles.css">
+    <title>positon-css</title>
+</head>
+
+<body>
+    <div class="header"> tab bar header </div>
+    <div class="box1">
+        box 1
+    </div>
+    <div class="box2">
+        box 2
+        <div class="bos-child2">
+            box child 2
+        </div>
+    </div>
+    <div class="box3">
+        box 3
+    </div>
+    <div>positon
+        <ul>
+            <li>Relative (vị trí tương đối)
+                <br>
+                không phụ thuộc vào đối tượng nào khác lấy vị trí mà nó đang đứng làm gốc tọa độ
+                <br>
+                sau đó chúng ta thoải mái di chuyển nó sang 4 hướng
+                (top, right, bottom, left)
+
+            </li>
+            <li>Absolute (vị trí tuyệt đối)
+                <br>
+                phụ thuộc vào thẻ cha gần nhất
+                có thuộc tính position, để lấy cha đó làm gốc tọa độ
+                <br>
+                dùng khi cần di chuyển đối tượng con so với đối tượng cha
+                <p>
+                    đạt đối tượng cha position là Relative, sau đó thoải mái di chuyển xum quanh thẻ cha
+                    <br>
+                    nếu bỏ with, height của thẻ con có position Absolute
+                    khi đătj 4 giá trị top...left =0 thì nó sẽ kéo hết ra phủ đầy thẻ cha
+                </p>
+            </li>
+            <li>Fixed (vị trí phụ thuộc khung trình duyệt)
+                <br>
+                khi thấy một phần tử phu thuộc vào cửa sổ trình duyệt
+                <br>
+                thì dùng position fixed
+            </li>
+            <li>Sticky (vị trí bám dính phụ thuộc vào khung trình duyệt)
+                <br>
+                hay ứng dụng navbar bám dính: hạn chế sử dụng đang thử nghiệm;
+                giới thiệu thôi, khi scroll lên đặt top =0 thì khi đến =0 thì phần tử sẽ
+                dừng lại không di chuyển nữa
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
