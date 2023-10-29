@@ -2,8 +2,11 @@ import React from "react";
 import {
   Button as AntdButton,
   Table as AntTable,
+  List as AntList,
   ButtonProps,
   TableProps,
+  ListProps,
+  FormItemProps,
 } from "antd";
 import "./stylesButton.css";
 
@@ -22,4 +25,8 @@ const MyButton: React.FC<MyButtonProps> = ({ children, ...rest }) => {
 const MyTable: React.FC<TableProps<any>> = (rest) => {
   return <AntTable {...rest} />;
 };
-export { MyButton, MyTable };
+
+const MyList: React.FC<ListProps<any>> = (props) => {
+  return <AntList {...props}> </AntList>;
+};
+export { MyButton, MyTable, MyList };

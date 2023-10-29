@@ -1,7 +1,11 @@
 import { Button, Input } from "antd";
 import React, { useCallback, useState } from "react";
 import ContentMemo from "./ContentMemo";
-import { MyButton, MyTable } from "../../../components/container/button";
+import {
+  MyButton,
+  MyList,
+  MyTable,
+} from "../../../components/container/button";
 /*
  1. => Higher order component (HOC)
  memo có nghĩa là ghi nhớ lại props của một component để quyết định
@@ -78,6 +82,12 @@ const Meno = () => {
       <ContentMemo checker={handleChecker} />
       <MyButton> button oki</MyButton>
       <MyTable dataSource={[]} />
+      <MyList
+        header={"title"}
+        dataSource={["mot", "hai"]}
+        footer={"hello"}
+        bordered
+      ></MyList>
     </div>
   );
 };
