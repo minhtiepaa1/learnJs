@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Optimization</title>
+</head>
+
+<body>
+    <h3> Tối ưu hình ảnh </h3>
+    <img onerror="''" src="link-picture" alt="anh">
+    onerror="this.src=''",
+    onerror dùng ảnh thay thế khi lỗi link trong thẻ img,
+    <br>
+    nếu trong thẻ div dùng background-image thì nếu ảnh thứ nhất lỗi ảnh thứ 2 sẽ được hiển thị:
+
+    <div>
+
+        tối ưu sử dụng hình ảnh trên trang web
+        <ol>
+            <li>
+                Sử dụng hình ảnh phù hợp
+                <ul>
+                    <li>Hình học, vecter... SVG</li>
+                    <li>bitmap transparent: PNG, WEBP</li>
+                    <li>bitmap không transparent: JPEG, WEBP</li>
+                </ul>
+            </li>
+            <li>
+                Nén hình ảnh giảm dung lượng
+                <ul>
+                    <li>https://tinypng.com/</li>
+                </ul>
+            </li>
+            <li>Sử dụng kích thước ảnh phù hợp
+                <br>
+                sử dụng ít hình ảnh
+                <ul>
+                    <li>
+                        ảnh ban đầu(original): 4000px X 4000px,
+                        <br>
+                        thực tế thiết kế: 800px * 800px (css),
+                        <br>
+                        vậy để phù hợp hiển thị trên nhiều màn khác nhau
+                        nên Resize:1600px * 1600px (2x)
+                        <br>
+                        dáp ứng tốt cho cả màn hình PPI/DPI cao (retina)
+                        <br>
+                        PPI (Pixel per inch (cho màn hình)) DPI (dots per inch(màn hình và in ấn)) (đo mật độ điểm ảnh)
+                    </li>
+                </ul>
+            </li>
+            <div>Loại màn hình</div>
+            <br>
+            1. màn hình thường ( DPI Thấp -1:1) tức là css 1 picxel tương ứng 1 picexl vật lý ( nếu thiết kế 800 *800
+            đưa resize về 800 *800 là ok)
+            <br>
+            2. màn hình retina (DPI cao - 2:1) (sủ dụng 800 *800 )(nó sẽ dùng 1600 *1600 pixel vật lý để thể hiện)
+        </ol>
+        <div>Trang web sử dụng nhiều hình ảnh ( nếu dùng các cách tối ưu trên )
+            Thiết bị:
+            <li>Mobile: 1600 * 1600 tốn bằng thông, chờ lâu hơn => giảm trải nghiệm</li>
+            <li>Tablet: 1600 * 1600</li>
+            <li>Desktop:1600 * 1600 ok </li>
+
+        </div>
+        <div>
+            Bài toán:
+            <li>Mobile: 1000px * 50px</li>
+            <li>Tablet: 2000px * 100px</li>
+            <li>Desktop: 4000px * 200px</li>
+        </div>
+        <div>
+            Sử dụng srcset Image
+            <br>
+            1. Resolution switching: Diferent sizes (đối với độ phân giải khác nhau sử dụng những hình ảnh có kích thước
+            khác nhau )
+            <img srcset="../../../../assets/container/html_css_f8/pexels-james (1).jpg 400w, ../../../../assets/container/html_css_f8/pexels-james (2).jpg 200w , ../../../../assets/container/html_css_f8/pexels-james (3).jpg 100w"
+                alt="Elva dressed as a fairy" />
+        </div>
+    </div>
+</body>
+
+</html>

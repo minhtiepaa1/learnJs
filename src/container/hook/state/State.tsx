@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 // State thể hiện trạng thái của dữ liệu
-// khi state thay đổi giao diện đó được render lại
+// khi state thay đổi giao diện đó được render lại (nếu set state bằng giá trị giống với giá trị trước
+// componet sẽ khong re-render lại (sử dụng toán tử === để so sánh))
 // tại sao gọi là hook vì nó gắn vào component
 // và tất cả các hook đều là hàm, đã là hàm thì chú ý đầu vào là gì
 // dầu ra là gì cách vận hành, nhận vào là gì và return ra cái gì

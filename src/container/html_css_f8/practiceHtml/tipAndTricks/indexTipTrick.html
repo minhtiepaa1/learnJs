@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/tipAndTricks/styles.css">
+    <style>
+        .box1 {
+            width: 80vw;
+            height: 80vh;
+            background-color: aqua;
+        }
+
+        .ngang {
+            text-align: center;
+            /* viết ở thẻ cha vẫn được do được thừa kế */
+        }
+
+        .doc {
+            line-height: 80vh;
+        }
+
+        .childDisplay {
+            width: 20%;
+            height: 20%;
+            background-color: blueviolet
+        }
+
+        .display {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .box4 {
+            background-color: yellowgreen;
+            height: 100px;
+            position: relative;
+        }
+
+        .centerMe {
+            position: relative;
+            margin: auto;
+            text-align: center;
+            top: 50px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .centerMe::after {
+            position: absolute;
+            left: 0;
+            content: "";
+            border-left: 3px solid violet;
+            height: 50px;
+            top: 50px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="ngang"> căn giữa chiều ngang </div>
+        <div class="doc"> căn giữa chiều dọc</div>
+    </div>
+    <h3>căn giữa dùng display flex </h3>
+    <div class="display">
+        <div class="childDisplay">mot </div>
+        <div class="childDisplay">hai </div>
+        <div class="childDisplay">ba </div>
+    </div>
+    <h3> Cách dùng translate để căn giữa</h3>
+    <div class="box4">
+        <h3 class="centerMe">center me</h3>
+    </div>
+</body>
+
+</html>
